@@ -4,16 +4,16 @@ kind: ReplicaSet
 metadata:
   name: my-rs
   labels: 
-    app: app-v1
+    app: app-a
   namespace: test
 spec:
   selector:
     matchExpressions:
-    - {key: app, operator: In, values: [my-app, cbz-app, app-v1]}
+    - {key: app, operator: In, values: [my-app, cbz-app, app-a]}
   template:
     meatadata:
       labels:
-        app: app-v1
+        app: app-a
         env: test
         project: Cloudblitz
     spec:
