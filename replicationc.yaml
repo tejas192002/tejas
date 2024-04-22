@@ -12,7 +12,7 @@ metadata:
   name: my-rc
   labels:
     app: my-app
-  Namespace: test
+  namespace: test
 spec:
   template:
     metadata:
